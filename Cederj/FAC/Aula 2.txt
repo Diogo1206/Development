@@ -1,0 +1,68 @@
+Conjunto Universo e Diagrama de Venn
+
+Conjunto universo é o conjunto em que se está considerando X
+Conjunto universo, U
+
+Notação: A = {x £ U | P(x)}
+A: o conjunto A
+=: está constituído
+x £ U: pelos elementos x pertencentes ao conjunto U (universo)
+|: tal que
+P(x): x verifica P(x)
+
+O conjunto universo U é representado por um "retângulo" e os subconjuntos próprios por "regiões circulares" dentro do retângulo. A C U
+
+Operações e Propriedades
+A = {1, 2, 3, 4, 5, 6}      B = {5, 6, 7, 8, 9}
+
+União: A U B = {x £ U | x £ A ou x £ B}
+
+A = {1, 2, 3, 4, 5, 6}
+B = {5, 6, 7, 8, 9}
+A U B = {1, 2, 3, 4, 5, 6, 7, 8, 9}
+A =c A U B e B =c A U B
+
+A =c B -> A U B = B então A U B = B -> A =c B
+A =c B <-> A U B = B
+A =c U
+A u A = A
+A u Ø = A
+
+Interseção: A n B = {x £ U | x £ A e x £ B}
+
+A = {1, 2, 3, 4, 5, 6}
+B = {5, 6, 7, 8, 9}
+A n B = {5, 6}
+A n B =c A e A n B =c B
+
+A =c B <-> A n B = A
+A =c U
+A n A = A
+A n Ø = Ø
+
+Diferença: A - B = {x £ U | x £ A e x € B} --- B - A = {x £ U | x £ B e x € A}
+A - B = {1, 2, 3, 4}
+B - A = {7, 8, 9}
+A - B =c A e B - A =c B
+A =c B <-> A - B = Ø
+A =c U
+A - A = Ø
+A - Ø = A
+
+Complemento: Ã = {x £ U | x € A}
+A = {x £ N | x <= 50}
+Ã = N - A = { x £ N | x > 50}
+
+A = {x £ Z | x > 2} = {3, 4, 5, ...}
+Ã = {x £Z | x <= 2} = {2, 1, 0, -1, -2, ...}
+
+A = {x £ N | x > 2} = {3, 4, 5, ...}
+Ã = {x £ N | x <= 2} = {1, 2}
+
+OBS:
+A - B = A n ~B
+B - A = B n Ã
+A U Ã = U
+A n Ã = Ø
+~U = Ø (~U = U - U)
+~Ø = U (~Ø = U - Ø)
