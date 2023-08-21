@@ -1,0 +1,115 @@
+Variáveis
+    • Tipos básicos são imutáveis
+   
+    • Tipos Integrais
+        – Inteiro: (int)
+            • Pode ter centenas de dígitos, limitado apenas pela memória do computador;
+            • O padrão é decimal, mas pode-se usar outras bases como binária (iniciada com 0b), octal (iniciada com 0o) ou hexadecimal (iniciada com 0x).
+        – Lógico (ou Booleano): (bool)
+            • 0 é False e 1 é True.
+
+    • Tipos de Ponto-Flutuante
+        – Número de Ponto-Flutuante: (float)
+        – Número Complexo: (complex)
+            • Representado por um par de números de ponto-flutuante.
+
+    • String (str)
+        – Representada por uma sequência de caracteres Unicode, iniciada e terminada por aspas simples ou duplas.
+
+
+
+
+Operadores Unários:
+    • Operador numérico positivo (+)
+        – Operando deve ser numérico
+        Ex: +5.75 (constante real)
+    • Operador numérico negativo (-)
+        – Operando deve ser numérico
+        Ex: -a (variável numérica)
+    • Operador lógico negação (not)
+        – Operando deve ser booleano
+        Ex: not fim (variável booleana)
+
+Operadores Binários Aritméticos:
+
+    • Soma (+)
+    • Subtração (-)
+    • Produto (*)
+    • Divisão de ponto flutuante (/)
+    • Divisão inteira (//)
+    • Resto da divisão inteira (%)
+    • Potenciação (**)
+    Ex: ( 5.75 + ( a % b ) – 7 ) / 8.1
+
+Operadores Binários Lógicos:
+    • Disjunção lógica ou soma lógica (or)
+    • Conjunção lógica ou produto lógico (and)
+    Ex: ( p or q ) and r
+
+Operadores Binários Relacionais:
+    • Igual a (==)
+    • Diferente de (!=)
+    • Maior que (>)
+    • Menor que (<)
+    • Maior ou igual a (>=)
+    • Menor ou igual a (<=)
+    
+    O resultado de uma operação relacional é um valor booleano.
+    (2 + 2) == 5 é falso!
+    (2 + 2) <= 5 é verdadeiro!
+
+Precedência dos Operadores:
+    1. Expressões entre Parênteses ( ) – Maior Prioridade;
+    2. Potenciação (**);
+    3. Unários (+, -);
+    4. Binários Multiplicativos (*, /, %, //);
+    5. Binários Aditivos (+, -);
+    6. Relacionais (==, !=, <, >, <=, >=);
+    7. Lógico not;
+    8. Lógico and;
+    9. Lógico or – Menor Prioridade
+
+Comandos de Saída Padrão:
+    • print()
+        – Pula para a próxima linha na saída padrão (vídeo).
+    • print(expressão)
+        – Escreve na saída padrão (vídeo) o resultado da avaliação da expressão;
+        – Ao final, pula para a próxima linha.
+    • print(expressão, end = término)
+        – Escreve na saída padrão (vídeo) o resultado da avaliação da expressão;
+        – Ao final, escreve a String de término.
+    • print(exp1, exp2, ..., expN, end = término)
+        – Escreve na saída padrão (vídeo) o resultado da avaliação de cada expressão expNum;
+        – Um espaço em branco é escrito entre cada par de expNum;
+        – Ao final, escreve a String de término.
+
+Expressões Formatadas (operador %(...)):
+    • Sintaxe da expressão formatada:
+        texto = “...%formato1 ... %formatoN...” %(exp1, ..., expN)
+    • Formatos mais comuns:
+        d (inteiro), f (número com ponto flutuante) e s (String)
+
+    • Exemplos:
+        –msg = “A média dos números é %4.2f” % (82432.923421)
+        -print(msg)
+            • Escreve “A média dos números é 82432.92” e pula de linha
+
+        –print(“%f + %f = %4.1f” % (15,7.8313, 15+7.8313))
+            • Escreve “15.000000 + 7.831300 = 22.8” e pula de linha
+
+        –print(“%d + %d = %d” % (5.89, 7.83, 5.89+7.83), end = “!!!”)
+            • Escreve “5 + 7 = 13!!!” (apenas a parte inteira) e não pula de linha
+
+Comandos de Entrada Padrão:
+    • input()
+        – Comando que aguarda o usuário fornecer, pela entrada padrão (teclado), um valor expresso por uma sequência de caracteres, e o retorna.
+        – Este comando tem o efeito de suspender a execução do programa até que o usuário escreva sua entrada e pressione a tecla <enter>.
+        – Exemplo:
+            
+            aluno = input()
+
+    • input(mensagem)
+        – Comando que escreve a expressão mensagem na saída padrão (vídeo) e aguarda, via interrupção, que o usuário escreva sua resposta, composta de uma sequência de caracteres digitados, e pressione a tecla <enter>.
+        – Exemplo:
+            
+            aluno = input(“Digite o nome do aluno: ”)
