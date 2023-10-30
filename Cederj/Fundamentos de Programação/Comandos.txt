@@ -15,10 +15,6 @@ Variáveis
 
     • String (str)
         – Representada por uma sequência de caracteres Unicode, iniciada e terminada por aspas simples ou duplas.
-
-
-
-
 Operadores Unários:
     • Operador numérico positivo (+)
         – Operando deve ser numérico
